@@ -10,13 +10,14 @@ const server = http.createServer((req, res)=>{
     // creating the multiple request 
     if(req.url == "/user"){
         // write the server 
-        res.end("this is the my user request ") ; 
-        // also using the write method 
         res.write("this is write method are the using ") ; 
+       return  res.end("this is the my user request ") ; 
+        // also using the write method 
+      
     }else if(req.url == "/payment"){
         // in this way the  handling the request 
         res.write("this is the write method in the payment "); 
-        res.end("this is the payment url ") ; 
+       return  res.end("this is the payment url ") ; 
         // again we are the write the  
         
     }
