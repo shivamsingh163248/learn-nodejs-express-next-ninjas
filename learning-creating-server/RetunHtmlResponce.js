@@ -10,9 +10,10 @@ const fs = require('fs') ;
 
 const server = http.createServer((req , res)=>{
    
-    const output = fs.readFileSync("index.html").toString ; 
+    const data = fs.readFileSync('learning-creating-server\\index.html').toString() ; 
     // now we are the using the output the value 
-    
+    res.end(data) ; 
+
 })
 
 // creating the port number where the server is the liston 
