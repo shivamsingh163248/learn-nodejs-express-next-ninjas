@@ -13,6 +13,12 @@ const server = http.createServer((req, res)=>{
         res.end("this is the my user request ") ; 
         // also using the write method 
         res.write("this is write method are the using ") ; 
+    }else if(req.url == "/payment"){
+        // in this way the  handling the request 
+        res.write("this is the write method in the payment "); 
+        res.end("this is the payment url ") ; 
+        // again we are the write the  
+        
     }
 
     console.log(req.url) ; 
