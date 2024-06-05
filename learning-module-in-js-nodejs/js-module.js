@@ -12,3 +12,11 @@ function multiply(a,b){
 
 
 // two way to creating the module to use this file in the another file 
+
+// frit way to export their module 
+// module.exports = {
+//     sumFunction : sum 
+// }
+module.exports = {
+    sumFunction : sum 
+}
