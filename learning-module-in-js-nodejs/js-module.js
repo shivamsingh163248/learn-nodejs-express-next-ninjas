@@ -31,3 +31,28 @@ module.exports.divide = (x,y)=>{
     // hear only the property can be export 
     return x/y ; 
 }
+
+
+// using the simple export using the arrow function 
+exports.minus = (a,b)=>{
+    // creating the minus function 
+    return a-b ; 
+}
+
+
+
+// using the ES6 
+
+// module.export that are the using the export  
+
+module.exports = function (a,b){
+    // creating the swiping the algorithm 
+    let c = a ; 
+    a = b ; 
+    b  = c ; 
+
+    // mow minus 
+    return a-b ; 
+}
+
+
