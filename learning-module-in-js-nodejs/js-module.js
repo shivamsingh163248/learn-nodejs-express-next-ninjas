@@ -18,5 +18,16 @@ function multiply(a,b){
 //     sumFunction : sum 
 // }
 module.exports = {
-    sumFunction : sum 
+    sumFunction : sum ,
+    multi : multiply  
+}
+
+// again writing the second way 
+
+
+// different way to export the module 
+// creating the divide function 
+module.exports.divide = (x,y)=>{
+    // hear only the property can be export 
+    return x/y ; 
 }
