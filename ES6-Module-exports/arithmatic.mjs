@@ -19,3 +19,13 @@ export  const details  = {
     MotherName : "sarita singh ",
     
 }
+
+
+// also export two different ways 
+
+export const MySchool = (school , college)=>{
+             
+   console.log("my school name "+school) ; 
+   console.log("my university name "+college) ; 
+
+}
