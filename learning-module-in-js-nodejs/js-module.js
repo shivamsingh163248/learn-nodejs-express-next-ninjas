@@ -45,14 +45,14 @@ exports.minus = (a,b)=>{
 
 // module.export that are the using the export  
 
-module.exports = function (a,b){
-    // creating the swiping the algorithm 
-    let c = a ; 
-    a = b ; 
-    b  = c ; 
+// module.exports = function (a,b){
+//     // creating the swiping the algorithm 
+//     let c = a ; 
+//     a = b ; 
+//     b  = c ; 
 
-    // mow minus 
-    return a-b ; 
-}
+//     // mow minus 
+//     return a-b ; 
+// }
 
 
