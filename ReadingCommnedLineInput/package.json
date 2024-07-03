@@ -1,0 +1,12 @@
+{
+  "name": "readingcommnedlineinput",
+  "version": "1.0.0",
+  "main": "ReadingConsoleInput.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shivam singh ",
+  "type": "module",
+  "license": "ISC",
+  "description": ""
+}
