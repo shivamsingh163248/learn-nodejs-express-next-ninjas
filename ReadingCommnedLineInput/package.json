@@ -8,5 +8,8 @@
   "author": "shivam singh ",
   "type": "commonjs",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.14.9"
+  }
 }
