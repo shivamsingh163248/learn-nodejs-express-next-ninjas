@@ -4,3 +4,4 @@
 import * as values from './TestModule' ; 
 
 // using the value to access the value 
+console.log(values.add(4,6)) ; 
