@@ -2,4 +2,9 @@
 const fs = require('fs') ; 
 
 // creating the sync function for the reading the file 
-  var data = fs.readFileSync('itisha.text');
+  var buffer = fs.readFileSync('ReadFileSystem/itisha.txt');
+
+   console.log(buffer);
+
+   // again its converted into the string using the string 
+   console.log(buffer.toString());
