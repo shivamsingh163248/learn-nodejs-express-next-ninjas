@@ -5,10 +5,20 @@ const http = require('http') ;
 
 const server = http.createServer((req , res)=>{
 
+    if (req.method == POST) {
+        
+    }
+        
+    res.end('this is the end of the ') ; 
   
+
 
 })
 
-// hear creating the list 
-// today is the we are the going the language 
+// hear we are the creating for the liston the server 
+server.listen(3000 , ()=>{
+    console.log('server are the starting ') ; 
+})
+
+
 
