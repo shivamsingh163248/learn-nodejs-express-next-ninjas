@@ -5,7 +5,7 @@ const http = require('http') ;
 
 const server = http.createServer((req , res)=>{
 
-    if (req.method == POST) {
+    if (req.method == 'POST') {
         
         let body = '' ; 
 
