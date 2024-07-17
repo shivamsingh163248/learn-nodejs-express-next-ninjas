@@ -8,15 +8,13 @@ const server = http.createServer((req , res)=>{
 
 
 // now handle the request 
-console.log(req.url) ; 
+console.log(req.url) ;  // this is are the using for the requesting path by the user 
    if (req.url = '/isu') {
-    
-
     // in the response we are the given the 
-    res.end('this is the isu path we are the using ') ; 
-
-
+      return  res.end('this is the isu path we are the using ') ; 
    }
+
+   res.end('this is the response of the again response');
 
 })
 
