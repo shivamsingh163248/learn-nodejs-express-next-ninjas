@@ -1,12 +1,11 @@
 
 // using the event module we are the creating the own event 
-import  * as  Events from 'events' ;
+import * as  Events from 'events' ;
 
 
 // creating the class for the the post to creating each post and save the data working with 
-// 
 
-class PostEvent extends Events.EventEmitter {
+export class PostEvent extends Events.EventEmitter {
 
     // if we are the creating the function 
     //simple the write the name of the function 

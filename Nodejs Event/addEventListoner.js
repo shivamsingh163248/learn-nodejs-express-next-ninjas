@@ -19,7 +19,7 @@ function sandMessage(){
     
 }
 
-// again we are the creatng the new function creating the post 
+// again we are the creating the new function creating the post 
 function addPost(){
     // this function are using for the adding the post 
     console.log('this is the using for the adding the post ') ; 
@@ -28,3 +28,5 @@ function addPost(){
 
 
 // now creating the event liston 
+newUser.addListener("PostCreated" , addDatabase) ; 
+
