@@ -19,7 +19,7 @@ const  server = http.createServer((req , res)=>{
         })
        } else {
 
-        res.end('data are successful ')
+        res.end('data are successful '); 
         
     }
 })
