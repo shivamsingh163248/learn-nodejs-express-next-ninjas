@@ -20,5 +20,5 @@ console.log(req.url) ;  // this is are the using for the requesting path by the 
 
 // now creating the port liston 
 server.listen(3100 , ()=>{
-    console.log('now server are the started ')
+    console.log('now server are the started ') ; 
 })
