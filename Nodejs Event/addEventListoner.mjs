@@ -1,9 +1,9 @@
 // now we are the importing the file 
-import {UserEvent} from './createPost'
+import {PostEvent} from './createPost.mjs'
 
 // user event is the object // now creating the object 
 
-const  newUser = new UserEvent() ; 
+const  newUser = new PostEvent ; 
 
 // now creating the function for the use 
 function addDatabase(){
@@ -29,4 +29,8 @@ function addPost(){
 
 // now creating the event liston 
 newUser.addListener("PostCreated" , addDatabase) ; 
+// now creating the event 
+
+// now we are the calling function two check 
+newUser.CreatePost('this is the creating the post user') ; 
 
