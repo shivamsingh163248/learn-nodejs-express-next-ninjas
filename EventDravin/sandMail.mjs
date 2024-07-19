@@ -36,6 +36,8 @@ const https = http.createServer((req, res) => {
 
 
 
+
+
     // we are the handling server 
     if (req.method == 'POST') {
 
@@ -72,6 +74,29 @@ const https = http.createServer((req, res) => {
                 res.end('now successful update the file ');
 
 
+
+                // now creating the mail option 
+                // this are using the passing the parameter in the sand option in transposer 
+                const mailOption = {
+                   from : "codingninjas2k16@gmail.com",
+                   to : email,
+                   subject : "Coding Ninjas",
+                     text : message
+                 }
+
+
+                 
+                 // now we are the sanding the mail 
+                    transporter.sendMail(mailOption , (error , info)=>{
+                        if (error) {
+                            console.log(error) ; 
+                        } else {
+                           FirstEvent.sandMail(email) ; 
+                        }
+                    })
+
+
+
             })
 
 
@@ -81,6 +106,12 @@ const https = http.createServer((req, res) => {
 
     }
 
+})
+
+
+// now we are the creating the event listener
+FirstEvent.on('sandMail', (email) => {
+    console.log(`email sand to ${email}`)
 })
 
 
