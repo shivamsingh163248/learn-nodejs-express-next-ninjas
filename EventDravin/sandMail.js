@@ -58,7 +58,13 @@ if (req.method == 'POST') {
          
         // now we are the printing 
         // we are the spiting the object 
-        
+        const{name , email , message} = jasonData ; 
+        //we are the directly access the data 
+        // now we are the storing the data as the string 
+        const quarryString = `name: ${name}\nEmail : ${email}\nMessage: ${message}` ; 
+        // now printing on the console 
+        console.log(quarryString) ; 
+
     
     })
 
