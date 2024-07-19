@@ -19,4 +19,19 @@ class event extends Event.EventEmitter{
 
 const FirstEvent = new event() ; 
 
+// creating the server using the http module that are using to creating the server 
+const https = http.createServer((req , res)=>{
 
+// we are the handling server 
+if (req.method == 'POST') {
+    
+  if (req.url = '/mailSand') {
+    
+       
+
+  }
+
+
+}
+
+})
