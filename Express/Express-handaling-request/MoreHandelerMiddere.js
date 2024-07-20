@@ -10,5 +10,17 @@ const server = express() ;
 
 server.get('/' , (req , res , next)=>{
     console.log("we are the not given any response ") ; 
-    
+        next() ; 
+},
+(req,res)=>{
+    res.send("now sanding the response to server ") ; 
+}
+)
+
+// now we are the creating the liston of the server 
+server.listen(5100 , ()=>{
+    console.log("server are the started ") ; 
 })
+
+
+
