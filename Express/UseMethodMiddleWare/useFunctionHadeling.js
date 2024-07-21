@@ -25,3 +25,20 @@ function UserAuthentication(req , res , next){
 }
 
 // now calling for the get 
+
+// all the request handling by use function 
+
+function sum(req,res,next){
+    console.log('this is function are the use handel all the request ') ; 
+    next() ; 
+}
+
+server.use(sum) ; 
+server.get('/sandMail' , [bookData , LoadData , UserAuthentication] , (req , res )=>{
+    res.send('this is the response') ; 
+})
+
+// now creating the for the liston port 
+server.listen(3100 , ()=>{
+    console.log("server are the getting started") ; 
+})
