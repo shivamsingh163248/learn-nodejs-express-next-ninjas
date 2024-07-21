@@ -12,15 +12,18 @@ server.get('/' , (req , res)=>{
 }) 
 
 server.post('/' , (req , res)=>{
-    console.log('this is the post request') ; 
+    console.log('this is the post request') ;
+    res.send('this is the post request') ;  
 
 })
 server.put('/' , (req , res)=>{
   console.log('this is the put request') ; 
+  res.send('this is the put request') ; 
 })
 
 server.delete('/' , (req , res)=>{
     console.log('this is the deleted request') ; 
+    res.send('this is the deleted request') ; 
 
 }) 
 
