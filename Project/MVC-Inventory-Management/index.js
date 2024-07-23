@@ -11,7 +11,10 @@ const server = express() ;
 server.use(express.static('./Project/MVC-Inventory-Management/src/view')) ; 
 
 
-
+server.get('/' , (req  , res , next)=>{
+    console.log(path.resolve()) ; 
+    next() ; 
+})
 
 server.get('/', (req , res)=>{
 
