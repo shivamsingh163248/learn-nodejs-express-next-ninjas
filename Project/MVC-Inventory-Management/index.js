@@ -1,7 +1,7 @@
 // creating the server using the express 
-const express = require('express') ; 
-const fs = require('fs') ; 
-const path = require('path') ; 
+import express from 'express'
+import path from 'path'; 
+import product from './src/controler/product.contoler.js';
 
 
 // creating the server 
@@ -16,11 +16,10 @@ server.get('/' , (req  , res , next)=>{
     next() ; 
 })
 
-server.get('/', (req , res)=>{
+// creating the object 
+const  test = new product() ; 
 
-    res.send('this is the fist response') ; 
-
-})
+server.get('/', test.productController ) ; 
 
 // now creating the server liston 
 server.listen(5100 , ()=>{
