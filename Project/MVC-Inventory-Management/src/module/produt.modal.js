@@ -6,5 +6,5 @@ import path from "path";
 export default class productModule{
 
     // creating the contactor 
-    
+    // CREATING ALL THE VALUE 
 }
