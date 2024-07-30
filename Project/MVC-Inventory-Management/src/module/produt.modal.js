@@ -18,7 +18,10 @@ export default class productModule{
 
     }
 
-
+  // creating the function of the get using the static method
+  static get(){
     
+  } 
+
 }
 
