@@ -9,7 +9,8 @@ const server = express() ;
 
 // now hear we are the defining the ejs 
 server.set('view engine'  , "ejs") ; 
-server.set('view' ,  path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','view')) ; 
+server.set('views' ,  path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','views')) ; 
+console.log(path.resolve()) ; 
 
 // now creating the server using the get 
 server.use(express.static('./Project/MVC-Inventory-Management/src/view')) ; 

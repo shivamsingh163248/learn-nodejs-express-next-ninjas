@@ -20,7 +20,8 @@ import productModule from "../module/produt.modal.js";
     console.log(product) ; 
 
     // creating the path of the current dir using the path module 
-   return  res.sendFile( path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','view','products.html')) ; 
+  //  return  res.sendFile( path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','view','products.html')) ; 
+    res.render("products" , {products : product}) ; 
      
  }
 
