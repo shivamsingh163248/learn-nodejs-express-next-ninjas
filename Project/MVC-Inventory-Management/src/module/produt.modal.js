@@ -10,11 +10,11 @@ export default class productModule{
     constructor(_id , _name , _desc , _pri , _imgUrl){
          
         // now set the value 
-        this._id = _id  ; 
-        this._name = _name ; 
-        this._desc = _desc ; 
-        this._pri = _pri ; 
-        this._imgUrl = _imgUrl ; 
+        this.id = _id  ; 
+        this.name = _name ; 
+        this.desc = _desc ; 
+        this.pri = _pri ; 
+        this.imgUrl = _imgUrl ; 
 
     }
 
