@@ -23,6 +23,7 @@ export default class productModule{
         
     // hear we are the return the get method 
     return product ; 
+    // now hear is return 
   } 
 
 }
