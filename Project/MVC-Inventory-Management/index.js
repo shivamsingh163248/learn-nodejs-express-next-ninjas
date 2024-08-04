@@ -2,6 +2,7 @@
 import express from 'express'
 import path from 'path'; 
 import product from './src/controler/product.contoler.js';
+import ejsLayouts from 'express-ejs-layouts' 
 
 
 // creating the server 
@@ -11,7 +12,8 @@ const server = express() ;
 server.set('view engine'  , "ejs") ; 
 server.set('views' ,  path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','views')) ; 
 console.log(path.resolve()) ; 
-
+// now using the to set the server layout that is the framework of the express 
+server.set(ejsLayouts) ; 
 // now creating the server using the get 
 server.use(express.static('./Project/MVC-Inventory-Management/src/view')) ; 
 
