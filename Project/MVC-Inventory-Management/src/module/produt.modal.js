@@ -38,11 +38,5 @@ var product = [
     new productModule(4 , 'product4' ,"fourth product" , 56.5 , "https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" )
     
 ]
-var products = [
-  new productModule(1 , 'product1' ,"fist product" , 37.5 , "https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" ),
-  new productModule(2 , 'product2' ,"second product" , 34.5 , "https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" ),
-  new productModule(3 , 'product3' ,"third product" , 30.5 , "https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" ),
-  new productModule(4 , 'product4' ,"fourth product" , 56.5 , "https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" )
-  
-]
+
 
