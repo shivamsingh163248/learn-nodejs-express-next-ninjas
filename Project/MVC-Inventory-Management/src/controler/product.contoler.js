@@ -35,8 +35,6 @@ import productModule from "../module/produt.modal.js";
 
  // now we are the handling the post request 
 // creating the pos
- SubmitData(req , res){
-  req.body 
- }
+
 
  }
