@@ -29,28 +29,14 @@ import productModule from "../module/produt.modal.js";
  addNewProduct(req , res){
     // creating the object of the product 
    // rendering the response 
-    res.render("new-product") ;
+    return res.render("new-product") ;
 
  }
 
  // now we are the handling the post request 
-  postNewProduct(req , res){
-      // creating the object of the product 
-      // creating the object of the product 
-      let product = new productModule(req.body.id , req.body.name , req.body.desc , req.body.pri , req.body.imgUrl) ; 
-      // now we are the pushing the product 
-      product.push(product) ; 
-      // now we are the redirecting the product 
-      res.redirect('/products') ; 
-  }
-  
-    // creating the function of the get using the static method
-    static get(){
-          
-      // hear we are the return the get method 
-      return product ; 
-      // now hear is return 
-      // hear is the return all the function which are required 
-    }
+// creating the pos
+ SubmitData(req , res){
+  req.body 
+ }
 
  }
