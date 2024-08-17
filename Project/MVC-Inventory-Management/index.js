@@ -30,6 +30,10 @@ server.get('/', test.productController ) ;
 // creating the for the add product
 server.get('/new' , test.addNewProduct) ;
 
+
+// now we are the handling the post request 
+server.post('/new' , test.postNewProduct) ;
+
 // now creating the server liston 
 server.listen(5100 , ()=>{
     console.log('now server is the getting started ') ; 

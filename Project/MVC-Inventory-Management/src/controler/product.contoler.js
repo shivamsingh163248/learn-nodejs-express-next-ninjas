@@ -34,7 +34,15 @@ import productModule from "../module/produt.modal.js";
  }
 
  // now we are the handling the post request 
-// creating the pos
+ // hear we are the handling the  response 
+  // creating the post request
+  postNewProduct(req , res){
+    // creating the product 
+    // creating the product module 
+    let product = new productModule() ;
+    console.log(req.body) ;
 
 
- }
+  }
+}
+
