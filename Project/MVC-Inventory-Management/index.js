@@ -27,6 +27,8 @@ server.get('/' , (req  , res , next)=>{
 const  test = new product() ; 
 
 server.get('/', test.productController ) ; 
+// creating the for the add product
+server.get('/new' , test.addNewProduct) ;
 
 // now creating the server liston 
 server.listen(5100 , ()=>{
