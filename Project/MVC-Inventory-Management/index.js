@@ -13,7 +13,7 @@ server.set('view engine'  , "ejs") ;
 server.set('views' ,  path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','views')) ; 
 console.log(path.resolve()) ; 
 // now using the to set the server layout that is the framework of the express 
-server.set(ejsLayouts) ; 
+server.use(ejsLayouts) ; 
 // now creating the server using the get 
 server.use(express.static('./Project/MVC-Inventory-Management/src/view')) ; 
 
