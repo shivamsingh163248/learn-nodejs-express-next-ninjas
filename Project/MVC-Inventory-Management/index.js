@@ -39,3 +39,5 @@ server.listen(5100 , ()=>{
     console.log('now server is the getting started ') ; 
 })
 
+// creating and the learning the lots of the function and the post that are the using and for the learning the value of the post 
+
