@@ -42,6 +42,9 @@ import productModule from "../module/produt.modal.js";
     let product = new productModule() ;
     console.log(req.body) ;
 
+    // hear we are the sanding the response to the user 
+    
+
 
   }
 }
