@@ -8,6 +8,9 @@ import ejsLayouts from 'express-ejs-layouts'
 // creating the server 
 const server = express() ; 
 
+// this is the using for the 
+server.use(express.urlencoded({extended:true})) ; 
+
 // now hear we are the defining the ejs 
 server.set('view engine'  , "ejs") ; 
 server.set('views' ,  path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','views')) ; 
@@ -32,8 +35,8 @@ server.get('/new' , test.addNewProduct) ;
 
 
 // now we are the handling the post request 
-server.post('/new' , test.postNewProduct) ;
-
+server.post('/sub' , test.postNewProduct) ;
+   
 // now creating the server liston 
 server.listen(5100 , ()=>{
     console.log('now server is the getting started ') ; 

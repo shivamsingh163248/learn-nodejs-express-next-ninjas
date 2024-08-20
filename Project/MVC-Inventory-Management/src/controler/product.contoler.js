@@ -17,7 +17,7 @@ import productModule from "../module/produt.modal.js";
 
     let product = productModule.get() ; 
     // now console product 
-    console.log(product) ; 
+    // console.log(product) ; 
 
     // creating the path of the current dir using the path module 
   //  return  res.sendFile( path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','view','products.html')) ; 
@@ -43,7 +43,8 @@ import productModule from "../module/produt.modal.js";
     console.log(req.body) ;
 
     // hear we are the sanding the response to the user 
-    // update
+    // now hear we are the sanding the response 
+     res.render("thank"); 
     
 
 
