@@ -32,9 +32,11 @@ export default class productModule{
        
       // crating the object 
       let addProduct = new productModule(
-        // now creating the set the value 
-        
-      )
+        product.length+1 , objectAdd._name , objectAdd._desc , objectAdd._pri , objectAdd._imgUrl
+      );
+
+      // now we are the pushing the value 
+      product.push(addProduct);
     }
 
 }

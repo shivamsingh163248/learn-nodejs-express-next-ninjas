@@ -44,6 +44,9 @@ import productModule from "../module/produt.modal.js";
 
     // hear we are the sanding the response to the user 
     // now hear we are the sanding the response 
+
+    // now we are the updating the profile 
+    
      res.render("thank"); 
     
 
