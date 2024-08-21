@@ -32,7 +32,7 @@ export default class productModule{
        
       // crating the object 
       let addProduct = new productModule(
-        product.length+1 , objectAdd._name , objectAdd._desc , objectAdd._pri , objectAdd._imgUrl
+        product.length+1 , objectAdd.name , objectAdd.desc , objectAdd.price , objectAdd.imageUrl
       );
 
       // now we are the pushing the value 

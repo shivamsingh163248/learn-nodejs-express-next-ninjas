@@ -46,7 +46,13 @@ import productModule from "../module/produt.modal.js";
     // now hear we are the sanding the response 
 
     // now we are the updating the profile 
-    
+    // using the product modal 
+    productModule.addProduct(req.body) ; 
+    // again check the value of the arrays 
+    let printArrays  = productModule.get() ; 
+    // now printing the vale in the console 
+    console.log(printArrays) ; 
+
      res.render("thank"); 
     
 
