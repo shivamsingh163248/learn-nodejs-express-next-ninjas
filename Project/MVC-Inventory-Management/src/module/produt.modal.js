@@ -27,6 +27,16 @@ export default class productModule{
     // hear is the return all the function which are required 
   } 
 
+  // creating  the static function for the writing the modal 
+    static addProduct(objectAdd){
+       
+      // crating the object 
+      let addProduct = new productModule(
+        // now creating the set the value 
+        
+      )
+    }
+
 }
 
 
