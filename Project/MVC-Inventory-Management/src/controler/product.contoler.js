@@ -30,6 +30,7 @@ import productModule from "../module/produt.modal.js";
     // creating the object of the product 
    // rendering the response 
     return res.render("new-product") ;
+    // this is the some updating hear 
 
  }
 
