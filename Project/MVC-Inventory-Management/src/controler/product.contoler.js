@@ -27,19 +27,13 @@ import productModule from "../module/produt.modal.js";
      
  }
  addNewProduct(req , res){
-    // creating the object of the product 
-   // rendering the response 
+ 
     return res.render("new-product") ;
-    // this is the some updating hear 
 
  }
 
- // now we are the handling the post request 
- // hear we are the handling the  response 
-  // creating the post request
+
   postNewProduct(req , res){
-    // creating the product 
-    // creating the product module 
     let product = new productModule() ;
     console.log(req.body) ;
 
