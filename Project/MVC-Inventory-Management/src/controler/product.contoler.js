@@ -28,11 +28,16 @@ import productModule from "../module/produt.modal.js";
   // creating the arrays of the errors
   let errors = [] ;
   // creating the object of the product
-  let product = req.body ;
+  const{name , prise , imgUrl} = req.body ;
   // checking the product name
-  if(!product.name){
-    errors.push({text : "Please add the name of the product"}) ;    
+  if(!name || name.trim() == ''){
+    errors.push("Please add the name of the product") ;    
   }
+
+
+  // again pushing the error for the prise and conation to greater then 1 
+   
+  
 
 
     let product = new productModule() ;
