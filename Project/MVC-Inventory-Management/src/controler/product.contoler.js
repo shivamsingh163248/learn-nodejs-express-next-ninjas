@@ -18,13 +18,23 @@ import productModule from "../module/produt.modal.js";
      
  }
  addNewProduct(req , res){
- 
     return res.render("new-product") ;
-
  }
 
 
-  postNewProduct(req , res){
+  postNewProduct(req , res ,next){
+
+  // creating the validation for the product 
+  // creating the arrays of the errors
+  let errors = [] ;
+  // creating the object of the product
+  let product = req.body ;
+  // checking the product name
+  if(!product.name){
+    errors.push({text : "Please add the name of the product"}) ;    
+  }
+
+
     let product = new productModule() ;
     console.log(req.body) ;
 
