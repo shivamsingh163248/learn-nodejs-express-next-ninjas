@@ -54,8 +54,8 @@ import productModule from "../module/produt.modal.js";
   // creating the condition for the checking the arrays is the greater then 
   if (errors.length > 0 ) {
     
-    // now rendering  the length 
-    
+    // now rendering  the length  values 
+    return res.render('new-product' , {errorMessage : errors[0]}) ; 
   }
   
 
