@@ -36,7 +36,19 @@ import productModule from "../module/produt.modal.js";
 
 
   // again pushing the error for the prise and conation to greater then 1 
-   
+  
+  if (!prise || parseFloat(prise) < 1) {
+    errors.push("please the enter the prise") ; 
+  }
+
+  // creating and the testing the url 
+  try {
+    const urlCheck = new URL(imgUrl) ; 
+    
+  } catch (err) {
+     errors.push("now insert the valid the url") ; 
+  }
+
   
 
 
