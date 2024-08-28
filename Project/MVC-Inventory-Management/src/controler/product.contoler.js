@@ -48,7 +48,15 @@ import productModule from "../module/produt.modal.js";
   } catch (err) {
      errors.push("now insert the valid the url") ; 
   }
+  
 
+  // check the arrays length 
+  // creating the condition for the checking the arrays is the greater then 
+  if (errors.length > 0 ) {
+    
+    // now rendering  the length 
+    
+  }
   
 
 
