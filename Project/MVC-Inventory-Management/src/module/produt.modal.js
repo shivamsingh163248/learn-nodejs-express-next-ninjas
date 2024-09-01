@@ -51,6 +51,6 @@ var product = [
     
 ]
 
-// we will the updating the form 
+// we will the updating the form // now updating  the detail 
 
 
