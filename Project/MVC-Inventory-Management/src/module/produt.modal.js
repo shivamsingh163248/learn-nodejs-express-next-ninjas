@@ -52,5 +52,5 @@ var product = [
 ]
 
 // we will the updating the form // now updating  the detail 
-
+// updating the profile and the  value 
 
