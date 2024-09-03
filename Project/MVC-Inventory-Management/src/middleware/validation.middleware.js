@@ -1,7 +1,7 @@
 
 // creating the function of the middleware validation 
 
-const poteenProduct = (req,res , next)=>{
+const addNewProduct = (req,res , next)=>{
 
 
     // creating the validation for the product 
@@ -42,3 +42,4 @@ const poteenProduct = (req,res , next)=>{
 };
 
 // exporting the module 
+export default addNewProduct ; 

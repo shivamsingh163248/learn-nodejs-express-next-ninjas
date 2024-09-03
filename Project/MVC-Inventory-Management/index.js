@@ -3,6 +3,7 @@ import express from 'express'
 import path from 'path'; 
 import product from './src/controler/product.contoler.js';
 import ejsLayouts from 'express-ejs-layouts' 
+import addNewProduct from './src/middleware/validation.middleware.js';
 
 
 // creating the server 
@@ -31,11 +32,11 @@ const  test = new product() ;
 
 server.get('/', test.productController ) ; 
 // creating the for the add product
-server.get('/new' , test.addNewProduct) ;
+server.get('/new', test.addNewProduct) ;
 
 
 // now we are the handling the post request 
-server.post('/sub' , test.postNewProduct) ;
+server.post('/sub' ,addNewProduct , test.postNewProduct) ;
    
 // now creating the server liston 
 server.listen(5100 , ()=>{
