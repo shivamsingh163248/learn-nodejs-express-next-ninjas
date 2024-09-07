@@ -72,6 +72,7 @@ import productModule from "../module/produt.modal.js";
 
   }
 
-  // something update 
+  // something update this is the updating the value 
+  
 }
 
