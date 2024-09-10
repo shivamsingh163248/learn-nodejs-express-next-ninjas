@@ -1,8 +1,11 @@
 
-// creating the function of the middleware validation 
+// creating the function of the middleware validation
+import {body} from 'express-validator' 
 
 const addNewProduct = (req,res , next)=>{
 
+
+   
 
     // creating the validation for the product 
   // creating the arrays of the errors
