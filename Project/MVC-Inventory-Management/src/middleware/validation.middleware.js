@@ -1,8 +1,8 @@
 
 // creating the function of the middleware validation
-import {body} from 'express-validator' 
+import {body , validationResult} from 'express-validator' 
 
-const addNewProduct = (req,res , next)=>{
+const addNewProduct = async(req,res , next)=>{
   const rule  = [
   // creating the rule 
     body('name').isEmpty().withMessage("name is the Empty"),
@@ -11,7 +11,7 @@ const addNewProduct = (req,res , next)=>{
     body('imgUrl').isURL().withMessage('prise is not url')
   ] ; 
   // all the set in the rule 
-  await Promise.all(rule.map(rule=>)) 
+  await Promise.all(rule.map(rule=> rule.run(req))) ;  
 
     // creating the validation for the product 
   // creating the arrays of the errors
@@ -38,13 +38,13 @@ const addNewProduct = (req,res , next)=>{
      errors.push("now insert the valid the url") ; 
   }
   
-
+var validationerror = validationResult(req)
   // check the arrays length 
   // creating the condition for the checking the arrays is the greater then 
-  if (errors.length > 0 ) {
+  if (!validationerror.isEmpty() ) {
     
     // now rendering  the length  values 
-    return res.render('new-product' , {errorMessage : errors[0]}) ; 
+    return res.render('new-product' , {errorMessage : validationerror.array()[0].msg }) ; 
   }
   next() ; 
 

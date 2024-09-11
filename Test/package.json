@@ -10,5 +10,8 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^20.14.9"
+  },
+  "dependencies": {
+    "test": "file:"
   }
 }
