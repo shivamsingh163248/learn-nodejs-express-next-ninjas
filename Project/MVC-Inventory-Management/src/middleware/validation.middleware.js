@@ -3,9 +3,15 @@
 import {body} from 'express-validator' 
 
 const addNewProduct = (req,res , next)=>{
-
-
-   
+  const rule  = [
+  // creating the rule 
+    body('name').isEmpty().withMessage("name is the Empty"),
+    body('prise').isFloat({gt : 0}).withMessage("prise is not empty ") , 
+    // now set the rule 
+    body('imgUrl').isURL().withMessage('prise is not url')
+  ] ; 
+  // all the set in the rule 
+  await Promise.all(rule.map(rule=>)) 
 
     // creating the validation for the product 
   // creating the arrays of the errors
