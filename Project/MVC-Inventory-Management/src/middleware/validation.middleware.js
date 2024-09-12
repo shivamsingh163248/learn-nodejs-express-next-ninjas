@@ -52,3 +52,5 @@ var validationerror = validationResult(req)
 
 // exporting the module 
 export default addNewProduct ; 
+
+// now updating the profile 
