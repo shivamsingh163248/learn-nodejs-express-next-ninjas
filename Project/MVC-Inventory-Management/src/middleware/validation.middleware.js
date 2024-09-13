@@ -3,9 +3,11 @@
 import {body , validationResult} from 'express-validator' 
 
 const addNewProduct = async(req,res , next)=>{
+
+  console.log(req.body)
   const rule  = [
   // creating the rule 
-    body('name').isEmpty().withMessage("name is the Empty"),
+    body('name').notEmpty().withMessage("name is the Empty"),
     body('prise').isFloat({gt : 0}).withMessage("prise is not empty ") , 
     // now set the rule 
     body('imgUrl').isURL().withMessage('prise is not url')
@@ -41,8 +43,9 @@ const addNewProduct = async(req,res , next)=>{
 var validationerror = validationResult(req)
   // check the arrays length 
   // creating the condition for the checking the arrays is the greater then 
-  if (!validationerror.isEmpty() ) {
-    
+  // now hear is printing is the validation error 
+  console.log(validationerror) ; 
+  if (!validationerror.isEmpty() ) { 
     // now rendering  the length  values 
     return res.render('new-product' , {errorMessage : validationerror.array()[0].msg }) ; 
   }
