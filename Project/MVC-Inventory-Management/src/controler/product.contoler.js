@@ -72,7 +72,15 @@ import productModule from "../module/produt.modal.js";
 
   }
 
-  // something update this is the updating the value 
+  
+// Writing the function for the updating the value 
+// creating the function post and product 
+postAddProduct(req , res , next){
+  // checking the id is available 
+   const{id} = req.body ; 
+  // now checking the id exist or not 
+  
+}
   
 }
 

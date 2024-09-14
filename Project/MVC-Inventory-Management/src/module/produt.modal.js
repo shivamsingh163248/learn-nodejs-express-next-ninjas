@@ -39,7 +39,14 @@ export default class productModule{
       product.push(addProduct);
     }
 
+    // creating the get product  
+static getByID(id){
+  
+  // using the find the method we are the implementing the method 
 }
+
+}
+
 
 
 // creating the array of the product 
