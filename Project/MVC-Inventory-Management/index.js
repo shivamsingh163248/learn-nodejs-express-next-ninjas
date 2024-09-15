@@ -37,6 +37,7 @@ server.get('/new', test.addNewProduct) ;
 
 // now we are the handling the post request 
 server.post('/sub' , addNewProduct , test.postNewProduct) ;
+server.get('/updating' , test.postAddProductUpdate  )
    
 // now creating the server liston 
 server.listen(5100 , ()=>{

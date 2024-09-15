@@ -75,7 +75,7 @@ import productModule from "../module/produt.modal.js";
   
 // Writing the function for the updating the value 
 // creating the function post and product 
-postAddProduct(req , res , next){
+postAddProductUpdate(req , res , next){
   // checking the id is available 
    const{id} = req.body ; 
   // now checking the id exist or not 
@@ -85,6 +85,8 @@ postAddProduct(req , res , next){
      
     // if this is the true now updating the product 
     res.render('updating-product' , {products:productFound , errorMessage : null })
+  }else{
+    res.send('product not found ') ; 
   }
 }
   
