@@ -43,6 +43,7 @@ export default class productModule{
 static getByID(id){
   
   // using the find the method we are the implementing the method 
+  return product.find((r) => r.id == id) ; 
 }
 
 }

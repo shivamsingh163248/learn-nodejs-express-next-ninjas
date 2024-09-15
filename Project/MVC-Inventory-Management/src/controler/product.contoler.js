@@ -79,7 +79,13 @@ postAddProduct(req , res , next){
   // checking the id is available 
    const{id} = req.body ; 
   // now checking the id exist or not 
-  
+  const productFound = productModule.getByID(id) ; 
+   
+  if (productFound) {
+     
+    // if this is the true now updating the product 
+    res.render('updating-product' , {products:productFound , errorMessage : null })
+  }
 }
   
 }
