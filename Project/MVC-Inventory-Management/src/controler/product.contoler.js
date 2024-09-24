@@ -18,6 +18,7 @@ import productModule from "../module/produt.modal.js";
      
  }
  addNewProduct(req , res){
+  // res.send("thank you ") ; 
     return res.render("new-product" , {errorMessage : null}) ;
  }
 

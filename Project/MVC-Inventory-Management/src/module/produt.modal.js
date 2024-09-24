@@ -46,6 +46,11 @@ static getByID(id){
   return product.find((r) => r.id == id) ; 
 }
 
+// creating the updating the product 
+// writing for the updating the product 
+
+
+
 }
 
 
