@@ -42,7 +42,7 @@ server.get('/updating/:id' , test.postAddProductUpdate  ) ;
 server.post('/updatingNewProduct' , )
    
 // now creating the server liston 
-server.listen(5100 , ()=>{
+server.listen(3000 , ()=>{
     console.log('now server is the getting started ') ; 
 })
 
