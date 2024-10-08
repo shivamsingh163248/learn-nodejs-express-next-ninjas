@@ -32,8 +32,10 @@ export default class productModule{
        
       // crating the object 
       let addProduct = new productModule(
-        product.length+1 , objectAdd.name , objectAdd.desc , objectAdd.price , objectAdd.imageUrl
+        product.length+1 , objectAdd.name , objectAdd.desc , objectAdd.prise , objectAdd.imgUrl
       );
+
+   
 
       // now we are the pushing the value 
       product.push(addProduct);
@@ -48,6 +50,7 @@ static getByID(id){
 
 // creating the updating the product 
 // writing for the updating the product 
+
 
 
 

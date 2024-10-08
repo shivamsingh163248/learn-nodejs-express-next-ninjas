@@ -47,7 +47,7 @@ var transporter = nodemailer.createTransport({
   });
   var mailOptions = {
     from: 'support@lovelymobilecenter.store',
-    to: 'shivamsingh163248@gmail.com', 
+    to: 'anujsingh122002@gmail.com', 
     subject: 'Sending Email using Node.js',
     text: 'That was easy!'
   };

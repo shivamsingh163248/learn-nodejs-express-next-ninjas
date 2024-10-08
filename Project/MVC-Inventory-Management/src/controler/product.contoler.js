@@ -65,6 +65,7 @@ import productModule from "../module/produt.modal.js";
     console.log(req.body) ;
 
     productModule.addProduct(req.body) ; 
+    
     let printArrays  = productModule.get() ; 
     console.log(printArrays) ; 
      res.render("thank"); 
@@ -76,6 +77,9 @@ import productModule from "../module/produt.modal.js";
   
 // Writing the function for the updating the value 
 // creating the function post and product 
+
+  
+
 postAddProductUpdate(req , res , next){
   // checking the id is available 
   const id = req.params.id ;
