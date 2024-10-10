@@ -50,10 +50,10 @@ static getByID(id){
 
 // creating the updating the product 
 // writing for the updating the product 
-static addUpdating(){
+static addUpdating(productObject){
   
   // finding the arrays and then set the new object location 
-  product.push()
+  
 
 
 }

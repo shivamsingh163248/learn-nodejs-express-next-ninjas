@@ -76,10 +76,18 @@ import productModule from "../module/produt.modal.js";
 
   
 // Writing the function for the updating the value 
-// creating the function post and product 
+// creating the function post and product  // this is the using for the re-updating product and correction of the product 
 
- ReUpdatingProduct(){
-  
+ ReUpdatingProduct(req , res){
+
+  productModule.addUpdating(req.body) ; 
+  let product = productModule.get() ; 
+  // now console product 
+  // console.log(product) ; 
+
+//  return  res.sendFile( path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','view','products.html')) ; 
+  res.render("products" , {products : product}) ; 
+
  }
 
   
