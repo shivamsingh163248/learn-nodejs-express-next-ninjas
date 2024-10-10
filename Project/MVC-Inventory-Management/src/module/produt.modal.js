@@ -52,7 +52,10 @@ static getByID(id){
 // writing for the updating the product 
 static addUpdating(productObject){
   
-  // finding the arrays and then set the new object location 
+  // finding the arrays and then set the new object location
+  // fits the find the index \
+  const index = product.findIndex((id)=>{p.id == productObject.id}) ;  
+  
   
 
 
