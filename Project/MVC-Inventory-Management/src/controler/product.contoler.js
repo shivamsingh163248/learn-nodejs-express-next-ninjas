@@ -81,11 +81,13 @@ import productModule from "../module/produt.modal.js";
  ReUpdatingProduct(req , res){
 
   productModule.addUpdating(req.body) ; 
+//   console.log("print reuest "+req.body) ; 
   let product = productModule.get() ; 
   // now console product 
   // console.log(product) ; 
 
 //  return  res.sendFile( path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','view','products.html')) ; 
+console.log(product) ; 
   res.render("products" , {products : product}) ; 
 
  }

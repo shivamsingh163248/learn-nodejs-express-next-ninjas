@@ -54,8 +54,12 @@ static addUpdating(productObject){
   
   // finding the arrays and then set the new object location
   // fits the find the index \
-  const index = product.findIndex((id)=>{p.id == productObject.id}) ;  
-  
+  console.log(productObject.id) ; 
+  const index = product.findIndex(
+    (p) => p.id == productObject.id
+    ) ;  
+  console.log("index number" + index) ; 
+   product[index]= productObject ; 
   
 
 
@@ -79,4 +83,9 @@ var product = [
 
 // we will the updating the form // now updating  the detail 
 // updating the profile and the  value 
+
+// creating the find index od the product using the product id  ==1
+// write a  code function that will find the index of the product with the id 
+
+
 

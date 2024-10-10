@@ -9,10 +9,10 @@
   </div>
 <% } %>
 
-<form action="/sub" method="post">
+<form action="/updatingNewProduct" method="post">
 
 
-    <input type="hidden" class="form-control" id="name" name="id" required>
+    <input type="hidden" class="form-control" id="name" name="id"  value="<%= products.id %>" required>
 
     <div class="mb-3">
         <label for="name" class="form-label">Product Name</label>
@@ -24,7 +24,7 @@
     </div>
     <div class="mb-3">
         <label for="price" class="form-label">Price</label>
-        <input type="number" class="form-control" id="price" name="prise" step="0.01" min="0" value="<%= products.pri %>" >
+        <input type="number" class="form-control" id="price" name="pri" step="0.01" min="0" value="<%= products.pri %>" >
     </div>
     <div class="mb-3">
         <label for="imageUrl" class="form-label">Image URL</label>
