@@ -39,7 +39,7 @@ server.get('/new', test.addNewProduct) ;
 server.post('/sub' , addNewProduct , test.postNewProduct) ;
 server.get('/updating/:id' , test.postAddProductUpdate  ) ; 
 
-server.post('/updatingNewProduct' ,test.ReUpdatingProduct )
+server.post('/updatingNewProduct' ,test.ReUpdatingProduct );
    
 // now creating the server liston 
 server.listen(3000 , ()=>{
