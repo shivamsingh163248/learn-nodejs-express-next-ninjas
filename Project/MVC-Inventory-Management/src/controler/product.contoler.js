@@ -78,6 +78,10 @@ import productModule from "../module/produt.modal.js";
 // Writing the function for the updating the value 
 // creating the function post and product 
 
+ ReUpdatingProduct(){
+  
+ }
+
   
 
 postAddProductUpdate(req , res , next){
