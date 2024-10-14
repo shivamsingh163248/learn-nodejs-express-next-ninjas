@@ -109,6 +109,8 @@ postAddProductUpdate(req , res , next){
     res.send('product not found ') ; 
   }
 }
+
+// now updating the producnt work properly 
   
 }
 
