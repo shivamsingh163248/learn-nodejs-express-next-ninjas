@@ -82,6 +82,7 @@ import productModule from "../module/produt.modal.js";
 
   productModule.addUpdating(req.body) ; 
 //   console.log("print reuest "+req.body) ; 
+// creating the condition and responce the setting the valus 
   let product = productModule.get() ; 
   // now console product 
   // console.log(product) ; 
@@ -89,6 +90,8 @@ import productModule from "../module/produt.modal.js";
 //  return  res.sendFile( path.join(path.resolve() , 'Project' , 'MVC-Inventory-Management' ,'src','view','products.html')) ; 
 console.log(product) ; 
   res.render("products" , {products : product}) ; 
+
+  
 
  }
 
