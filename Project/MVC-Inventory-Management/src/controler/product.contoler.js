@@ -83,6 +83,7 @@ import productModule from "../module/produt.modal.js";
   productModule.addUpdating(req.body) ; 
 //   console.log("print reuest "+req.body) ; 
 // creating the condition and responce the setting the valus 
+// this is the cheking for update
   let product = productModule.get() ; 
   // now console product 
   // console.log(product) ; 
