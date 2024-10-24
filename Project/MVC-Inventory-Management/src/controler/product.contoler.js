@@ -68,7 +68,8 @@ import productModule from "../module/produt.modal.js";
     
     let printArrays  = productModule.get() ; 
     console.log(printArrays) ;
-    // hear we are the rendering the thank you page  
+    // hear we are the rendering the thank you page 
+    // this page is rendering the value  
      res.render("thank"); 
     
 
